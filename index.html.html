@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bram luister test</title>
+</head>
+<body>
+  <h1>Zeg "Hallo Bram"</h1>
+  <p>Tik op Start luisteren en zeg: <strong>Hallo Bram</strong></p>
+  <button id="startBtn">Start luisteren</button>
+  <p id="status">Status: klaar</p>
+
+  <audio id="bramSound" src="hallo_bram.mp3" preload="auto"></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.21.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/googlecreativelab/teachable-machine-community@master/libraries/speech/dist/teachablemachine-speech.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
