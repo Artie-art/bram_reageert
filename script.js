@@ -16,7 +16,7 @@ startBtn.addEventListener("click", async () => {
 
 async function init() {
   try {
-    model = await tmSpeech.load(MODEL_PATH, "./metadata.json");
+    model = await tmSpeech.create(MODEL_PATH, "./metadata.json");
   } catch (e) {
     console.error("Fout bij laden model:", e);
     statusEl.textContent = "Model kon niet geladen worden.";
@@ -52,3 +52,4 @@ function playBramOnce() {
   audioEl.currentTime = 0;
   audioEl.play().catch(err => console.warn("Kon audio niet automatisch afspelen:", err));
 }
+
